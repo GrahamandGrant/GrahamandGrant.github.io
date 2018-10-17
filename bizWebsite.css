@@ -1,0 +1,101 @@
+*{
+  font-family: Arial, Arial, sans-serif;
+}
+.color {
+    background-color: #ccc;
+}
+h1 {
+  font-size: 64px; 
+  text-align: center;
+  background-color: transparent;
+  font-weight: 500;
+  border: none;
+  overflow: hidden;
+  color: orangered;
+  margin-bottom: 0px;
+
+}
+h2 {
+  font-size: 18px; 
+  text-align: center;
+  background-color: transparent;
+  font-weight: 500;
+  border: none;
+  overflow: hidden;
+  color: orangered;
+  margin-top: 0px;
+
+}
+h3 {
+  font-size: 36px; 
+  background-color: transparent;
+  font-weight: 500;
+  border: none;
+  overflow: hidden;
+  color: orange;
+  margin-bottom: 0px;	
+}
+h4 {
+  font-size: 36px; 
+  background-color: transparent;
+  font-weight: 500;
+  border: none;
+  overflow: hidden;
+  color: orange;
+}
+body{
+  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("raindrops-blue-garden-seamless-tile.jpg");
+  background-repeat: repeat;
+  background-attachment:fixed;
+  margin: 0;
+  padding: 0;
+
+
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("rain-umbrella.jpg");
+    background-size: cover;
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: sticky;
+
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: orangered;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: inline-block;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
