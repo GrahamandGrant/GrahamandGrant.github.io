@@ -4,6 +4,7 @@
 .color {
     background-color: #ccc;
 }
+
 h1 {
   font-size: 64px; 
   text-align: center;
@@ -42,6 +43,7 @@ h4 {
   border: none;
   overflow: hidden;
   color: orange;
+  text-align: center;
 }
 body{
   background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("raindrops-blue-garden-seamless-tile.jpg");
@@ -49,7 +51,10 @@ body{
   background-attachment:fixed;
   margin: 0;
   padding: 0;
-
+  position: sticky;
+  background-attachment: fixed;
+  background-position: center;
+  margin-top: 30px;
 
 }
 
@@ -62,7 +67,11 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    position: sticky;
+    position: fixed;
+    background-attachment: fixed;
+    background-position: center;
+    top: 0;
+    width: 100%;
 
 
 }
