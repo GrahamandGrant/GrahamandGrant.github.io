@@ -6,7 +6,7 @@
 }
 
 h1 {
-  font-size: 64px; 
+  font-size: 90px; 
   text-align: center;
   background-color: transparent;
   font-weight: 500;
@@ -18,7 +18,7 @@ h1 {
 
 }
 h2 {
-  font-size: 18px; 
+  font-size: 24px; 
   text-align: center;
   background-color: transparent;
   font-weight: 500;
@@ -44,11 +44,12 @@ h4 {
   font-weight: 500;
   border: none;
   overflow: hidden;
-  color: orange;
+  color: black;
   text-align: center;
 }
 body{
-  background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("raindrops-blue-garden-seamless-tile.jpg");
+  /*background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("raindrops-blue-garden-seamless-tile.jpg");*/
+  background-color: grey;
   background-repeat: repeat;
   background-attachment:fixed;
   margin: 0;
@@ -63,6 +64,7 @@ body{
 /* Add a black background color to the top navigation */
 .topnav {
     background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("rain-umbrella.jpg");
+    /*background-color: white;*/
     background-size: cover;
     overflow: hidden;
     list-style: none;
@@ -74,6 +76,9 @@ body{
     background-position: center;
     top: 0;
     width: 100%;
+    border-color: black;
+    border: solid;
+    height: 270px;
 
 
 }
@@ -84,7 +89,7 @@ body{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 24px;
     display: inline-block;
 }
 
