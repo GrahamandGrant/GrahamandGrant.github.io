@@ -10,16 +10,55 @@
   </head>
 
   <body>
+      <div class="box">
+        <div id="bodyTerm">
+      <div class="w3-row-padding w3-padding-64 w3-container" style="margin-top: 200px">
+        <div class="w3-content">
+          <div class="w3-twothird" style="text-align: left">
+              <h3>Has this ever happened to you?</h3>
+              <h5 class="w3-padding-32">You are on your way to work on a stormy Thursday morning. Luckily you remembered your umbrella, which you open as soon as you get out of your car. The thin layer of canopy above you is immediately bombarded by the downpour of rain, the frail frame barely withstanding the constant barrages. Just when you think you are safe, a heavy wind roars into you, forcing your umbrella sideways and exposing you to the sheer force of the storm. You finally reach your building, drenched and breathless, as if you never brought your umbrella at all. The only solace you have is knowing you are finally safe and warm. What if there was a way for you to feel this safe and warm, out in the storm? 
+</h5>
+          </div>
+
+          <div class="w3-third w3-center">
+              <img src="badumbrella.jpg" height="70%" width="70%"></img>
+          </div>
+        </div>
+    </div>
+    <!-- Second Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+          <div class="w3-third w3-center">
+            <img src="niceumbrella.jpg" height="250px" width="300px"></img>
+          </div>
+
+          <div class="w3-twothird">
+              <h3>We Have the Solution</h3>
+              <h5 class="w3-padding-32">Warmbrella</h5>
+          </div>
+        </div>
+    </div>
+  </div>
+        </div>
+        <div class="box" onscroll="getBig()" style="align-content:center; height:150px">
+        <h1>Scroll to learn more</h1>
+        <img src="arrow.png" style="background:transparent;" height="100px" width="50px" class="center"></img>
+      </div>
+        </div>
+      </div>
+
+
+  <div class="box2" style="display:none;">
   <!-- Page content -->
     <div class="main">
-	  <div class="topnav" width='100%' style="padding:0px; text-align: center">
-  		<h1>
+	  <div class="topnav" width='100%' style="padding:0px; text-align: center; height:200px">
+  		<h1 style="font-size: 64px; margin-bottom: 0px">
 			Warmbrella
 		<img src="umbrella.png" height="45px" width="50px">
 		</h1>
 
-		<h2>
-			Keeping you warm in the storm
+		<h2 style="font-size: 20px; margin-top: 0px; font-style: italic; color:black">
+			Keeping You Warm in the Storm
 		</h2>
   		<a href="#main" onclick="myFunction('Home')">Home</a>
   		<a href="#page2" onclick="myFunction('How')">How it Works</a>
@@ -30,15 +69,15 @@
 
     <div id="Home">
 	<!-- First Grid -->
-		<div class="w3-row-padding w3-padding-64 w3-container" style="margin-top: 250px">
+		<div class="w3-row-padding w3-padding-64 w3-container" style="margin-top: 200px">
   			<div class="w3-content">
     			<div class="w3-twothird" style="text-align: left">
       				<h3>What is the Warmbrella?</h3>
-      				<h5 class="w3-padding-32">The Warmbrella is everything you want from an umbrella, regardless of the weather conditions. The heat blasting technology keeps you warm while traveling through rain, snow, and everything  in between. The water and pressure resistant top keeps you safe during hail storms and dry during downpours of rain. Live in a place with large amounts of wind? Warmbrella has you covered- with micro blasts of air in the circumference of the frame that keeps out wind and the rain that comes with it.</h5>
+      				<h5 class="w3-padding-32">The Warmbrella is everything you want from an umbrella. The heat blasting technology keeps you warm while traveling through rain, snow, and everything in between. The water and pressure resistant top keeps you safe during hail storms and dry during downpours of rain. Micro blasts of air from the frame protect you from wind and rain. Nothing can stop you, with Warmbrella.</h5>
     			</div>
 
     			<div class="w3-third w3-center">
-      				<img src="heater.png" height="200px" width="250px"></img>
+      				<img src="heater.png" height="250px" width="300px"></img>
     			</div>
   			</div>
 		</div>
@@ -47,12 +86,12 @@
 		<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
   			<div class="w3-content">
     			<div class="w3-third w3-center">
-    				<img src="boulder.jpg"></img>
+    				<img src="boulder.jpg" height="250px" width="300px"></img>
     			</div>
 
     			<div class="w3-twothird">
       				<h3>About Us</h3>
-      				<h5 class="w3-padding-32">We are a small independent company who wants to help keep people safe and comfortable in harsh weather conditions. Based out of Boulder Colorado, we are dedicated to providing a state of the art product with the best customer service possible. </h5>
+      				<h5 class="w3-padding-32">We are a small independent company based out of Boulder Colorado. We are two college students who were tired of being cold in the rain. With a dream to revolutionize the umbrella, we started Warmbrella.</h5>
     			</div>
   			</div>
 		</div>
@@ -129,6 +168,8 @@
 		Contact Us
 	</h3>
   </div>
+</div>
 <script type="text/javascript" src="./myJava.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 </html>

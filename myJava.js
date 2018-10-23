@@ -1,3 +1,22 @@
+var amBig = false;
+//$("box2").css("visibility", "hidden");
+function getBig(){
+    //$(".box").css({"height": "100vh", "width": "100vw"});
+    if (amBig){
+        return
+    }
+    amBig = true
+    $(".box").toggleClass("mybox");
+
+    console.log("here")
+    setTimeout(function(){
+        console.log("here2");
+        $(".box").hide();
+        //$(".mybox2").fadeIn(500);
+        $(".box2").show();
+    }, 2000)
+}
+
 function myFunction(id) {
     var x = ''
     var x = document.getElementById(id);
