@@ -111,3 +111,13 @@ function myFunction2(id) {
     x.style.display = "block";
     }
 }
+
+$(document).ready(function(){
+    $(".bg-text").click(function(){
+        $("#image").slideUp({duration: 1000});
+        var m = document.getElementById("text");
+        m.style.display = "none";
+        $(".box2").delay(900).fadeIn(900);
+    });
+
+});
