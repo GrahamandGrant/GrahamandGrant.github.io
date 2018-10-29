@@ -343,3 +343,23 @@ input[type=submit]:hover {
 .icon_container :hover {
     transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
+
+.pathos .thin{
+  font-style: italic;
+  color: beige;
+  font-size: 20px;
+  text-shadow: 2px 2px black;
+}
+
+.pathos .bold{
+  font-style: bold;
+  color: black;
+  font-size: 20px;
+  text-shadow: 2px 2px red;
+}
+.pathos .wet{
+  font-style: bold;
+  color: blue;
+  font-size: 20px;
+  text-shadow: 2px 2px white;
+}
