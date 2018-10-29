@@ -327,7 +327,7 @@ input[type=submit]:hover {
 
 .icon_container{
     display: block;
-    margin-left: 850px;
+    margin-left: 60% auto;
     margin-right: auto;
     width: 50%;
 }
