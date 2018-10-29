@@ -8,138 +8,436 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+  <style>
+  .w3-bar-block .w3-bar-item {padding:20px}
+  </style>
   <body>
-<body>
-<div class="first">
-<div class="bg-image"></div>
-<div class="bg-text" onclick="getBig()">
-  <h1>Has this ever happened to you?</h1>
-  <p>You are on your way to work on a stormy Thursday morning. Luckily you remembered your umbrella, which you open as soon as you get out of your car. The thin layer of canopy above you is immediately bombarded by the downpour of rain, the frail frame barely withstanding the constant barrages. Just when you think you are safe, a heavy wind roars into you, forcing your umbrella sideways and exposing you to the sheer force of the storm. You finally reach your building, drenched and breathless, as if you never brought your umbrella at all. The only solace you have is knowing you are finally safe and warm. What if there was a way for you to feel this safe and warm, out in the storm? </p>
+
+<div class="bg-image" id="image"></div>
+<div class="bg-text" id="text" onclick="getBig()">
+  <h1 style="font-size: 48px">Has this ever happened to you?</h1>
+  <p style="margin-left: 300px; margin-right: 300px; font-size: 18px; margin-top: 200px; margin-bottom: 250px">You are on your way to work on a stormy Thursday morning. Luckily you remembered your umbrella, which you open as soon as you get out of your car. The thin layer of canopy above you is immediately bombarded by the downpour of rain, the frail frame barely withstanding the constant barrages. Just when you think you are safe, a heavy wind roars into you, forcing your umbrella sideways and exposing you to the sheer force of the storm. You finally reach your building, drenched and breathless, as if you never brought your umbrella at all. The only solace you have is knowing you are finally safe and warm. What if there was a way for you to feel this safe and warm, out in the storm? </p>
         <h1 style="margin-top: 100px">Click to learn more</h1>
         <img src="arrow.png" style="background:transparent;" height="100px" width="50px" class="center"></img> 
       </div>
-</div>
+
+
   <div class="box2" style="display:none;">
   <!-- Page content -->
     <div class="main">
-	  <div class="topnav" width='100%' style="padding:0px; text-align: center; height:200px">
-  		<h1 style="font-size: 64px; margin-bottom: 0px">
-			Warmbrella
-		<img src="umbrella.png" height="45px" width="50px">
-		</h1>
-
-		<h2 style="font-size: 20px; margin-top: 0px; font-style: italic; color:black">
-			Keeping You Warm in the Storm
-		</h2>
-  		<a href="#main" onclick="myFunction('Home')">Home</a>
-  		<a href="#page2" onclick="myFunction('How')">How it Works</a>
-  		<a href="#page3" onclick="myFunction('Buy')">Buy Now</a>
-  		<a href="#page4" onclick="myFunction('Test')">Testimonials</a>
-  		<a href="#page5" onclick="myFunction('Cont')">Contact Us</a>
-	</div>
-
-    <div id="Home">
-	<!-- First Grid -->
-		<div class="w3-row-padding w3-padding-64 w3-container" style="margin-top: 200px">
-  			<div class="w3-content">
-    			<div class="w3-twothird" style="text-align: left">
+	    <div class="topnav" width='100%' style="padding:0px; text-align: center; height:200px">
+  		  <h1 style="font-size: 64px; margin-bottom: 0px">
+			    Warmbrella
+		      <img src="umbrella.png" height="45px" width="50px">
+		    </h1>
+     		<h2 style="font-size: 20px; margin-top: 0px; font-style: italic; color:black">
+			    Keeping You Warm in the Storm
+		    </h2>
+  		  <a href="#main" onclick="myFunction('Home')">Home</a>
+  		  <a href="#page2" onclick="myFunction('How')">How it Works</a>
+  		  <a href="#page3" onclick="myFunction('Buy')">Buy Now</a>
+  		  <a href="#page4" onclick="myFunction('Test')">Testimonials</a>
+  		  <a href="#page5" onclick="myFunction('Cont')">Contact Us</a>
+	    </div>
+      <div id="Home">
+	    <!-- First Grid -->
+		    <div class="w3-row-padding w3-padding-64 w3-container" style="margin-top: 150px">
+  			  <div class="w3-content">
+    			  <div class="w3-twothird" style="text-align: left">
       				<h3>What is the Warmbrella?</h3>
       				<h5 class="w3-padding-32">The Warmbrella is everything you want from an umbrella. The heat blasting technology keeps you warm while traveling through rain, snow, and everything in between. The water and pressure resistant top keeps you safe during hail storms and dry during downpours of rain. Micro blasts of air from the frame protect you from wind and rain. Nothing can stop you, with Warmbrella.</h5>
-    			</div>
-
-    			<div class="w3-third w3-center">
+    			  </div>
+    			  <div class="w3-third w3-center">
       				<img src="heater.png" height="250px" width="300px"></img>
-    			</div>
-  			</div>
-		</div>
-
-		<!-- Second Grid -->
-		<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-  			<div class="w3-content">
+    			  </div>
+  			  </div>
+		    </div>
+		    <!-- Second Grid -->
+		    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  			 <div class="w3-content">
     			<div class="w3-third w3-center">
     				<img src="boulder.jpg" height="250px" width="300px"></img>
     			</div>
 
     			<div class="w3-twothird">
       				<h3>About Us</h3>
-      				<h5 class="w3-padding-32">We are a small independent company based out of Boulder Colorado. We are two college students who were tired of being cold in the rain. With a dream to revolutionize the umbrella, we started Warmbrella.</h5>
+      				<h5 class="w3-padding-32">We are a small independent company based out of Boulder, Colorado. We are dedicated to providing a state of the art product with the best customer service possible.
+</h5>
     			</div>
   			</div>
-		</div>
-	</div>
+		  </div>
+	  </div>
   
-  <div id="How" style="display: none; margin-top: 290px">
+    <div id="How" style="display: none;">
 		<!-- First Grid -->
-		<div class="w3-row-padding w3-padding-64 w3-container" style="margin-top: 250px">
+		  <div class="w3-row-padding w3-padding-64 w3-container" style="margin-top: 150px">
   			<div class="w3-content">
     			<div class="w3-twothird" style="text-align: left">
-      				<h3>Design</h3>
-      				<h5 class="w3-padding-32">Warmbrella is masterfully designed in order to create the perfect umbrella for any situation. The fiberglass shaft and ribs make the entire tool lightweight, yet weighted enough to keep from being battered by heavy winds. A comfortable rubber handle allows for a sturdy grip by any age or size, while also containing the micro heater/fan that powers our micro heatblast technology. Opening the Warmbrella is easy with our built in pressure sensor in the handle- simply squeeze firmly on the handle to open the umbrella.  The canopy frame contains micro holes through which burst of heated air prevent sideways wind and rain, while keeping you warm when traveling. The conpoy itself is made from a water and pressure resistant acrylic, that contains a fire resistant finish. In the base of the handle is a USBC charging port which allows for a 1 hour charging time, and the battery can last up to 5 hours of use.</h5>
+      			  <h3>Design</h3>
+      				<h5 class="w3-padding-32">We spent countless hours working to make the perfect umbrella for any situation. Warmbrella combines comfort, style, and technology in its revolutionary design.</h5>
     			</div>
 
     			<div class="w3-third w3-center">
-      				<img src="design1.png" height="500px" width="350px"></img>
+      				<img src="designumbrella.png" height="250px" width="250px"></img>
     			</div>
   			</div>
-		</div>
+		  </div>
 
 		<!-- Second Grid -->
 		<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
   			<div class="w3-content">
     			<div class="w3-third w3-center">
-    				<img src="boulder.jpg"></img>
+    				<img src="handle.png" height="400px" width="250px"></img>
     			</div>
 
     			<div class="w3-twothird">
-      				<h3>Heating Element</h3>
-      				<h5 class="w3-padding-32">Text About how the heating element works </h5>
+      				<h3>Handle</h3>
+      				<h5 class="w3-padding-32">
+                <ul>
+                <li>Charging Port</li>
+                  <ul>
+                  <li>In the base of the handle is a USBC charging port which allows for a 1 hour charging time, and the battery can last up to 5 hours of use. You can see how much battery is left through an indicator light at the bottom of the grip. We know that every minute can count in getting from A to B, so we designed the microheater to run at full speed until the last drop of battery. </li>
+                  </ul>
+                <li>Rubber Grip</li>
+                  <ul><li>A textured rubber handle allows for a comfortable grip by any age or size, while also containing the micro heater/fan that powers our micro heatblast technology. Opening the Warmbrella is easy with our built in pressure sensor in the handle- simply squeeze firmly on the handle to open the umbrella. </li>
+                  </ul>
+                </ul></h5>
     			</div>
   			</div>
 		</div>
 		<!-- First Grid -->
-		<div class="w3-row-padding w3-padding-64 w3-container" style="margin-top: 250px">
+		<div class="w3-row-padding w3-padding-64 w3-container" style="margin-top: 0px">
   			<div class="w3-content">
     			<div class="w3-twothird" style="text-align: left">
-      				<h3>Umbrella itself</h3>
-      				<h5 class="w3-padding-32">Text about how the umbrella is designed</h5>
+      				<h3>Canopy</h3>
+      				<h5 class="w3-padding-32">
+              <ul>
+              <li>Acrylic Material</li>
+              <ul>
+              <li>The canopy frame contains micro holes through which bursts of heated air prevent sideways wind and rain, while keeping you warm when traveling.</li>
+              <li>We designed our canopy to mimic the same heating elements used in heated patio umbrellas. So you know how dry and warm you will feel while on the go.</li>
+              <li>The fabric is composed of a water and pressure resistant acrylic, that contains a fire resistant finish.</li>
+              </ul>
+              </ul>    
+              </h5>
     			</div>
 
     			<div class="w3-third w3-center">
-      				<img src="design1.png" height="500px" width="350px"></img>
+      				<img src="design1.png" height="400px" width="250px"></img>
     			</div>
   			</div>
 		</div>
+    <!-- Second Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+          <div class="w3-third w3-center">
+            <img src="umbrellaframe.jpg" height="200px" width="300px"></img>
+          </div>
+
+          <div class="w3-twothird">
+              <h3>Frame</h3>
+              <h5 class="w3-padding-32">
+                <ul>
+                  <li>The fiberglass shaft and ribs make the entire umbrella lightweight, yet sturdy enough to keep from being battered by heavy winds. A large reason why we created Warmbrella was because of how frail and unreliable other umbrella’s felt. You should have an umbrella that stays by your side regardless of what comes in your way, and you can feel that every time you use your Warmbrella.</li>
+                </ul>
+              </h5>
+          </div>
+        </div>
+    </div>
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container" style="margin-top: 0px">
+        <div class="w3-content">
+          <div class="w3-twothird" style="text-align: left">
+              <h3>Heating Element</h3>
+              <h5 class="w3-padding-32">Tiny holes drilled into the canopy frame allow for the microblast heating technology to keep you warm in any weather. The bursts of heated air keep out any weather that is blown sideways or underneath you, making you feel as secure as being inside.</h5>
+          </div>
+
+          <div class="w3-third w3-center">
+              <img src="heater2.jpg" height="300px" width="300px"></img>
+          </div>
+        </div>
+    </div>
   </div>
 
 
 
 
-  <div id="Buy" style="display: none; margin-top: 290px">
-	<h3>
+  <div id="Buy" style="display: none; margin-top: 200px">
+	<h3 style="text-align: center; font-size:48px">
 		Buy it now
 	</h3>
-	<p>
+	<p style="text-align: center; font-size: 18px">
 		Warmbrella comes in a variety of colors and patterns for you to choose from, so your Warmbrella will feel special to you or to the person you are buying it for.  
 	</p>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="redumbrella.jpeg" alt="redumbrella" height="272px" width="272px" ">
+      <h3>Our Red Umbrella is sporty and fun, helping you to stand out in the rain</h3>
+      <p>$49.99</p>
+      <input type="number" min="1" max="9">
+    </div>
+    <div class="w3-quarter">
+      <img src="blueumbrella.jpeg" alt="blueumbrella" style="width:100%">
+      <h3>Our Blue Umbrella has a classic look to it that stands out without being too in your face</h3>
+      <p>$49.99</p>
+      <input type="number" min="1" max="9">
+    </div>
+    <div class="w3-quarter">
+      <img src="yellowumbrella.jpeg" alt="yellowumbrella" style="width:100%">
+      <h3>Our Yellow Umbrella is spunky, allowing you to show off your style in the harshest conditions</h3>
+      <p>$49.99</p>
+      <input type="number" min="1" max="9">
+    </div>
+    <div class="w3-quarter">
+      <img src="blackumbrella.jpg" alt="blackumbrella" style="width:100%">
+      <h3>Our Black Umbrella is a regal classic, presenting a more refined look than our other colors</h3>
+      <p>$54.99</p>
+      <input type="number" min="1" max="9">
+    </div>
   </div>
-  <div id="Test" style="display: none; margin-top: 290px">
-	<h3 id="Test">
+  <button class="center" onclick="myFunction2('sale')">Checkout</button>
+
+
+<!-- End page content -->
+</div>
+
+  </div>
+
+ <div id="sale" style="display: none; margin-top: 200px">
+  <div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="New York">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart 
+        <span class="price" style="color:black">
+          <i class="fa fa-shopping-cart"></i> 
+          <b>1</b>
+        </span>
+      </h4>
+      <p><a href="#">Product 1</a> <span class="price">$49.99</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>$49.99</b></span></p>
+    </div>
+  </div>
+</div>
+ </div>
+</div>
+  
+
+  <div id="Test" style="display: none; margin-top: 200px">
+	<h3 id="Test" style="text-align: center; font-size:48px">
 		Testimonials
 	</h3>
-	<p>
-		People around the world are raving about Warmbrella.
-	(Insert reviews from fake people)
+	<h4 style="text-align: center; margin-bottom: 50px">
+	People around the world are raving about Warmbrella.
+</h4>
+<div class="container2">
+  <img src="man1.jpeg" alt="Avatar" style="width:90px">
+  <p><span>Mike P.</span> (Buffalo, New York).</p>
+  <p>"This umbrella changed my life! I walk to work everyday, so I have to deal with rain and snow constantly. My old umbrella would only keep me dry in some light rain, but when it rains in New York, it pours!! Ever since I got my warmbrella, I have kept dry and warm through some pretty nasty storms. It’s a weird feeling to not get wet at all during a snowstorm in the middle of December, and even weirder to feel WARM outside! I will say I don’t like having to charge my umbrella, but it’s worth it when you feel so protected in some nasty storms."</p>
+</div>
 
+<div class="container2">
+  <img src="woman1.jpeg" alt="Avatar" style="width:90px">
+  <p><span >Jennifer Q.</span>(Denver, Colorado).</p>
+  <p>"My friend told me about this new umbrella, and I’m glad she did. Works great, looks great, and it actually feels like it has some weight to it! I would recommend this to anyone looking for an umbrella that lasts."" </p>
+</div>
+<div class="container2">
+  <img src="man2.jpeg" alt="Avatar" style="width:90px">
+  <p><span >Vin D.</span>(Seattle, Washington).</p>
+  <p>"This is my second review (now having it for a year), and it has made a difference in my everyday life for sure. Haven’t had to use it in any major snow/hail storms yet, but went through some heavy rain storms and the quality has held up."</p>
+</div>
+<h4 style="text-align: center">
 	We want your feedback! We strive to make the perfect umbrella for you to enjoy, and the best way to achieve perfection is to know what our customers are loving about Warmbrella, as well as what could use some improvement. Write your review below, our team reads and discusses every review! 
-	</p>
+	</h4>
+  <div class="container3">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="city">City</label>
+    <input type="text" id="city" name="city" placeholder="City..">
+
+    <label for="country">State</label>
+    <select id="state" name="state">
+  <option value="AL">AL</option>
+  <option value="AK">AK</option>
+  <option value="AR">AR</option>  
+  <option value="AZ">AZ</option>
+  <option value="CA">CA</option>
+  <option value="CO">CO</option>
+  <option value="CT">CT</option>
+  <option value="DC">DC</option>
+  <option value="DE">DE</option>
+  <option value="FL">FL</option>
+  <option value="GA">GA</option>
+  <option value="HI">HI</option>
+  <option value="IA">IA</option>  
+  <option value="ID">ID</option>
+  <option value="IL">IL</option>
+  <option value="IN">IN</option>
+  <option value="KS">KS</option>
+  <option value="KY">KY</option>
+  <option value="LA">LA</option>
+  <option value="MA">MA</option>
+  <option value="MD">MD</option>
+  <option value="ME">ME</option>
+  <option value="MI">MI</option>
+  <option value="MN">MN</option>
+  <option value="MO">MO</option>  
+  <option value="MS">MS</option>
+  <option value="MT">MT</option>
+  <option value="NC">NC</option>  
+  <option value="NE">NE</option>
+  <option value="NH">NH</option>
+  <option value="NJ">NJ</option>
+  <option value="NM">NM</option>      
+  <option value="NV">NV</option>
+  <option value="NY">NY</option>
+  <option value="ND">ND</option>
+  <option value="OH">OH</option>
+  <option value="OK">OK</option>
+  <option value="OR">OR</option>
+  <option value="PA">PA</option>
+  <option value="RI">RI</option>
+  <option value="SC">SC</option>
+  <option value="SD">SD</option>
+  <option value="TN">TN</option>
+  <option value="TX">TX</option>
+  <option value="UT">UT</option>
+  <option value="VT">VT</option>
+  <option value="VA">VA</option>
+  <option value="WA">WA</option>
+  <option value="WI">WI</option>  
+  <option value="WV">WV</option>
+  <option value="WY">WY</option>
+</select>
+
+    <label for="Review">Review</label>
+    <textarea id="review" name="review" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
 
   </div>
   <div id="Cont" style="display: none; margin-top: 290px">
-	<h3 id="Cont">
+	<h3 id="Cont" style="font-size:48px; text-align:center">
 		Contact Us
 	</h3>
+  <h4>
+    Start a conversation with us! 
+  </h4>
+  <div class="center">
+    <h4 style="font-size: 36px">Mailing Address</h4>
+    <p style="text-align: center">2316 South Wonder Rd. Boulder, CO. 80301. </p>
+    <h4 style="font-size: 36px">Email</h4>
+    <p style="text-align: center">ContactUs@Warmbrella.com</p>
   </div>
+  <h3 style="text-align: center; font-size: 36px">Links</h3>
+  <h4>Our Gihub and Email</h4>
+  <div class="icon_container">
+          <a href="https://github.com/GrahamandGrant"
+          target="_blank">
+            <img 
+              src = "https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"
+              height = "60px"
+              width = "60px"
+              alt="My Github"
+              style="transition: .8s; border-radius: 50%; align-content: center;" 
+          /></a>
+          <a href="mailto:ContactUs@Warmbrella.com"
+          target="_blank">
+            <img 
+              src = "http://icons.iconarchive.com/icons/graphicloads/100-flat-2/256/email-icon.png"
+              height = "60px"
+              width = "60px"
+              alt="Email Me"
+              style="transition: .8s"  
+          /></a>
+        </div>
+      </div>
+
+  </div>
+
 </div>
 <script type="text/javascript" src="./myJava.js"></script> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
